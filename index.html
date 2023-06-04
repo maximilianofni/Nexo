@@ -1,30 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- etiqueta para que se pongan acentos automaticamente -->
+     <!-- etiqueta para que se pongan acentos automaticamente -->
     <meta charset="UTF-8">
     <!-- etiqueta para agregar el favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
-    <!-- etiqueta para agregar codigo css desde otro archivo o como se dice CSS externo -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- etiqueta para agregar codigo css desde otro archivo o como se dice CSS externo -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap" rel="stylesheet">
     <!-- etiqueta para colocar titulo de web  -->
-    <title> Nexo</title>
+    <title>Nexo</title>
 </head>
-<body>
     <!-- comienzo del codigo para el navbar -->
-    <header>
-        <img class="logo" src="img/logo.svg" alt="logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">Carreras</a></li>
-                <li><a href="#">Rubros</a></li>
-                <li><a href="#">Sugerencias</a></li>
-                <li><a href="#">Preguntas Precuentes</a></li>
-            </ul>
-        </nav>
-        <img class="logo" src="img/nnn.png" alt="logo">
+    <header class="header">
+        <a href="prueba.html" class="a"> <img class="logo" src="img/logo.svg" alt="logo"></a>
+        
+        <button class="button">
+            <!-- copiar el icono del menu hamburguesa desde bootstrap icons -->
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <!-- fin el icono del menu hamburguesa desde bootsrap icons -->
+        </button>
+        
+        <!-- inicio del boton hamburguesa -->   
+        <div class="menu">
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="li"><a href="estudiantes.html" class="a">Estudiantes</a></li>
+                    <li class="li"><a href="#" class="a">Empleos</a></li>
+                    <li class="li"><a href="#" class="a">Reclutadores</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href=""data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="logo" src="img/nnn.png" alt="logo"></a>
+        <!-- fin del boton hamburguesa -->
     </header>
     <!-- fin del codigo para el navbar -->
+    <body>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Acerca de Nexo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Nexo es una aplicación web dividida en 3 módulos.</p>
+                  <p> El primer módulo está diseñado para brindar información valiosa e interesante a estudiantes sobre los rubros de Tecnologías de la Información (IT) y carreras tecnológicas.
+                     Además, cuenta con un módulo que te permite descubrir los rubros más adecuados según tus intereses y preferencias. 
+                    Por último, encontrarás respuestas a preguntas frecuentes de aquellos interesados en estudiar una carrera tecnológica.</p> 
+                  <p>En Nexo, podrás explorar oportunidades laborales en el módulo de Empleos y acceder a un módulo exclusivo para Reclutadores. 
+                    Los reclutadores podrán publicar ofertas de empleo y examinar perfiles de aspirantes para distintos puestos disponibles. 
+                    Esto facilitará el proceso de selección de perfiles adecuados para las empresas.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->    
+
+    <!-- Example Code -->
+   
+<section class="container p-3">
+    <div id="carouselExample" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Slide 1" class=""></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"  class="active" aria-current="true" ></button>
+        </div>
+        <div class="carousel-inner d-flex align-items-center">
+            <div class="carousel-item h-100" data-bs-interval="10000">
+                <img src="img/carreras.png" class="d-block w-100 carousel-image" alt="photo 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h4>Estudiantes</h4> -->
+                </div>
+            </div>
+            <div class="carousel-item h-100" data-bs-interval="2000">
+                <img src="img/rubros.png" class="d-block w-100 carousel-image" alt="photo 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h4>Empleos</h4> -->
+                </div>
+            </div>
+            <div class="carousel-item h-100 active">
+                <img src="img/reclutador.png" class="d-block w-100 carousel-image" alt="photo 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h4>Reclutadores</h4> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" class="carousel-button" type="button" data-bs-target="#carouselExample" data-bs-slide="next" >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+    <!-- Example Code -->
+
+    <div class="container">
+        <footer class="py-3">
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-center">
+                <p class="mx-auto">&copy; 2023 Nexo. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    
 </body>
 </html>
+

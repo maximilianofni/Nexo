@@ -1,10 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+@charset "UTF-8";
+
+:root {
+  --tipo-principal: 'Montserrat', sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  display: block;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Código */
+.header{
+  width:100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+.header .h1{
+  /* background-color: aqua; */
+}
+.header .a{}
+
+.header .button{
+  /* background-color: crimson; */
+  display: none;
+}
+.header .svg {
+  width: 2em;
+  height: 2em;
+  fill: #AF13F2;
+}
+
+.header .button {
+  order: 2;
+  margin-left: auto;
+}
+
+
+
+.header .nav{
+  /* background-color: bisque; */
+  
+}
+.header .ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; /* Cambio realizado: centrar elementos */
+  align-items: center;
+  font-family: 'Montserrat', sans-serif; /* Agrega esta línea para cambiar la fuente */
+  font-weight: 800; /* Opcional: ajusta el peso de la fuente según tus necesidades */
+}
+.header .li{
+  margin: 0 .5em;
+}
+
+@media screen and (max-width:480px){
+  .header .button{
+    display: block;
+    cursor: pointer;
+  }
+  .header .nav{
+    width:100%;
+    /* display: none; */
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav.activo{
+    /* display: block; */
+    height:50vh;
+    pointer-events: auto;
+  }
+  .header .ul{
+    flex-direction: column;
+  }
+  .header .li{
+    margin: 1rem 0;
+  }
+
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  color:#AF13F2;
+}
+
+
+/* codigo viejo  */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
+/* section{
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center; 
+    justify-content: center;
+} */
 
 /* comienzo del codigo del nav */
 
@@ -21,7 +231,7 @@ header{
 
 li,a {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 16px;
     color: #AF13F2;
     text-decoration: none;
@@ -44,3 +254,39 @@ li,a {
     color: aquamarine;
 }
 /* fin del codigo del nav */
+
+
+
+.texto1{ 
+    /* font-size: 2rem; */
+    color: white;
+    position: absolute;
+    font-size: 45px;
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+
+.carousel-image {
+    height: 500px; /* Ajusta la altura deseada */
+    object-fit: cover;
+  }
+
+  h4 {
+    color: white;
+    font-size: 30px;
+  }
+
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 1;
+  }
+
+  .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #AF13F2
+}
+  
