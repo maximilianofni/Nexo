@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"> <img class="logo" src="img/logo.svg" alt="logo"></a>
+  </div>
+</div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Analista en Sistemas</h2>
+    <p><i>
+        Un analista en sistemas es un profesional formado en una carrera universitaria de grado en el campo de la informática y la tecnología de la información. Los analistas en sistemas tienen la capacidad de analizar, diseñar, implementar y mantener sistemas de información.
+        
+    </i></p>
+    <p class="w3-justify">
+        Los sistemas de información son herramientas informáticas que ayudan a las empresas, organizaciones, sistemas de información en línea y aplicaciones móviles para procesar, almacenar y utilizar los datos.
+        Estos sistemas pueden estar compuestos por hardware, software, bases de datos, redes de comunicación y personas que utilizan y administran la información. Algunos ejemplos de estos sistemas pueden ser: redes sociales, juegos en línea, aplicación de transporte, aplicaciones de entrega, entre otros.
+        Un Analista en Sistemas puede desempeñar varios roles importantes.
+        
+        <p> Algunos de estos roles importantes pueden incluir: </p> 
+        <ul>
+            <li>Analizar los requisitos de los usuarios para desarrollar software, aplicaciones web y móviles que satisfagan sus necesidades. Esto implica utilizar lenguajes de programación y herramientas específicas para diseñar y desarrollar , que se adapten a las necesidades de los clientes y usuarios. </li>
+            <li>Realizar pruebas para asegurarse de que las aplicaciones desarrolladas funcionen correctamente. Esto implica probar y validar los sistemas para garantizar su correcto funcionamiento y detectar posibles problemas que puedan afectar su rendimiento. Implementar sistemas y proporcionar soporte técnico para los usuarios. Esto implica instalar y configurar software, capacitar a los usuarios y brindar soporte técnico para resolver problemas técnicos que puedan surgir. </li>
+            <li>Mantener y actualizar los sistemas existentes para mejorar su rendimiento y seguridad. Esto implica identificar y solucionar problemas técnicos y de seguridad en los sistemas desarrollados, además de implementar actualizaciones y mejoras para mantener el rendimiento y la seguridad de los sistemas.</li>
+        </ul>
+
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third">
+                <div class="w3-margin-bottom">
+                    <button class="w3-button w3-black" onclick="window.location.href='https://www.ucalp.edu.ar/carrera/analistasistemas/'">UCALP</button>
+                </div>
+                <img src="img/ucalp.svg" class="w3-round" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <div class="w3-margin-bottom">
+                    <button class="w3-button w3-black" onclick="window.location.href='https://www.info.unlp.edu.ar/analista-programador-universitario/'">UNLP</button>
+                </div>
+                <img src="img/unlp.svg" class="w3-round" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <div class="w3-margin-bottom">
+                    <button class="w3-button w3-black" onclick="window.location.href='https://www.institucional.frc.utn.edu.ar/sistemas/Download/Reglamentos/2023/1910.pdf'">UTN</button>
+                </div>
+                <img src="img/utn.svg" class="w3-round" style="width:60%">
+            </div>
+        </div>
+        
+        
+
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+  <p class="w3-medium">&copy; 2023 Nexo. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

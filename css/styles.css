@@ -129,6 +129,7 @@ body {
 .header .button{
   /* background-color: crimson; */
   display: none;
+  margin: 1em auto;
 }
 .header .svg {
   width: 2em;
