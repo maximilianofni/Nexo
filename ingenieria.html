@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ingenieria</title>
+<meta charset="UTF-8">
+ <!-- etiqueta para agregar el favicon -->
+ <link rel="shortcut icon" href="img/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- tooltip -->
+<script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6.3.3/dist/tippy-bundle.umd.min.js"></script>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+@media (max-width: 767px) {
+        .w3-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .w3-third {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .w3-third button {
+            display: block;
+            margin: 0 auto;
+        }
+      }
+
+      .w3-button[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .w3-button[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* tooltip */
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.w3-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.w3-third .tooltip-container {
+  margin-bottom: 10px; /* Ajusta este valor según sea necesario */
+}
+
+/* tooltip */
+
+.list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-container li {
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <!-- <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"></i></a> menu hamburguesa-->
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"> <img class="logo" src="img/logo.svg" alt="logo"></a>
+  </div>
+</div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Ingeniería en Computación o Sistemas</h2>
+    <p><i>
+        Un Ingeniero en Computaciòn o Sistemas es un profesional que tiene una formación sólida en matemáticas, ciencias de la computación, electrónica, teoría de la información, redes de computadoras y otras áreas afines. Su trabajo se enfoca en la aplicación de principios y técnicas de la ingeniería para diseñar, desarrollar, implementar y mantener sistemas de información y tecnologías de la información.  
+    </i></p> 
+    <h3>Las tareas que puede realizar un ingeniero en sistemas o en computación son: </h3>  
+        <ul class="list-container">
+            <li>Diseñar y desarrollar tanto hardware como software </li>
+            <li>Analizar y solucionar problemas de hardware y software. </li>
+            <li>Evaluar y seleccionar tecnologías en el desarrollo de softwarey hardware para empresas y organizaciones.</li>
+            <li>Planificar y gestionar proyectos.</li>
+            <li>Configurar y mantener redes y sistemas.</li>
+        </ul>
+
+        <h3>Universidades donde se cursa</h3>
+
+        <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <div class="tooltip-container">
+              <button class="w3-button w3-black tooltip-trigger" onclick="window.location.href='https://www.info.unlp.edu.ar/ingenieria-en-computacion/'">UNLP</button>
+              <span class="tooltip-text">Ingrese para obtener información</span>
+            </div>
+            <img src="img/unlp.svg" class="w3-round" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <div class="tooltip-container">
+              <button class="w3-button w3-black tooltip-trigger" onclick="window.location.href='https://www.frlp.utn.edu.ar/carrera-sistemas'">UTN</button>
+              <span class="tooltip-text">Ingrese para obtener información</span>
+            </div>
+            <img src="img/utn.svg" class="w3-round" style="width:60%">
+          </div>
+        </div>
+        
+
+        
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">&copy; 2023 Nexo. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+
+</script>
+
+</body>
+</html>

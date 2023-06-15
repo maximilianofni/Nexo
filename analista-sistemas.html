@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- tooltip -->
+<script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6.3.3/dist/tippy-bundle.umd.min.js"></script>
+
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -30,7 +34,67 @@ body {font-family: "Lato", sans-serif}
             display: block;
             margin: 0 auto;
         }
- 
+      }
+
+      .w3-button[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .w3-button[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* tooltip */
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.w3-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.w3-third .tooltip-container {
+  margin-bottom: 10px; /* Ajusta este valor según sea necesario */
+}
+
+/* tooltip */
+
 </style>
 </head>
 <body>
@@ -53,35 +117,41 @@ body {font-family: "Lato", sans-serif}
     <p class="w3-justify">
         Los sistemas de información son herramientas informáticas que ayudan a las empresas, organizaciones, sistemas de información en línea y aplicaciones móviles para procesar, almacenar y utilizar los datos.
         Estos sistemas pueden estar compuestos por hardware, software, bases de datos, redes de comunicación y personas que utilizan y administran la información. Algunos ejemplos de estos sistemas pueden ser: redes sociales, juegos en línea, aplicación de transporte, aplicaciones de entrega, entre otros.
-        Un Analista en Sistemas puede desempeñar varios roles importantes.
-        
-        <p> Algunos de estos roles importantes pueden incluir: </p> 
+        Un Analista en Sistemas puede desempeñar varios roles importantes.    
+        <h3> Algunos de estos roles importantes pueden incluir: </h3> 
+    </p>    
         <ul>
             <li>Analizar los requisitos de los usuarios para desarrollar software, aplicaciones web y móviles que satisfagan sus necesidades. Esto implica utilizar lenguajes de programación y herramientas específicas para diseñar y desarrollar , que se adapten a las necesidades de los clientes y usuarios. </li>
             <li>Realizar pruebas para asegurarse de que las aplicaciones desarrolladas funcionen correctamente. Esto implica probar y validar los sistemas para garantizar su correcto funcionamiento y detectar posibles problemas que puedan afectar su rendimiento. Implementar sistemas y proporcionar soporte técnico para los usuarios. Esto implica instalar y configurar software, capacitar a los usuarios y brindar soporte técnico para resolver problemas técnicos que puedan surgir. </li>
             <li>Mantener y actualizar los sistemas existentes para mejorar su rendimiento y seguridad. Esto implica identificar y solucionar problemas técnicos y de seguridad en los sistemas desarrollados, además de implementar actualizaciones y mejoras para mantener el rendimiento y la seguridad de los sistemas.</li>
         </ul>
 
+        <h3>Universidades donde se cursa</h3>
+
         <div class="w3-row w3-padding-32">
-            <div class="w3-third">
-                <div class="w3-margin-bottom">
-                    <button class="w3-button w3-black" onclick="window.location.href='https://www.ucalp.edu.ar/carrera/analistasistemas/'">UCALP</button>
-                </div>
-                <img src="img/ucalp.svg" class="w3-round" style="width:60%">
+          <div class="w3-third">
+            <div class="tooltip-container">
+              <button class="w3-button w3-black tooltip-trigger" onclick="window.location.href='https://www.ucalp.edu.ar/carrera/analistasistemas/'">UCALP</button>
+              <span class="tooltip-text">Ingrese para obtener información</span>
             </div>
-            <div class="w3-third">
-                <div class="w3-margin-bottom">
-                    <button class="w3-button w3-black" onclick="window.location.href='https://www.info.unlp.edu.ar/analista-programador-universitario/'">UNLP</button>
-                </div>
-                <img src="img/unlp.svg" class="w3-round" style="width:60%">
+            <img src="img/ucalp.svg" class="w3-round" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <div class="tooltip-container">
+              <button class="w3-button w3-black tooltip-trigger" onclick="window.location.href='https://www.info.unlp.edu.ar/analista-programador-universitario/'">UNLP</button>
+              <span class="tooltip-text">Ingrese para obtener información</span>
             </div>
-            <div class="w3-third">
-                <div class="w3-margin-bottom">
-                    <button class="w3-button w3-black" onclick="window.location.href='https://www.institucional.frc.utn.edu.ar/sistemas/Download/Reglamentos/2023/1910.pdf'">UTN</button>
-                </div>
-                <img src="img/utn.svg" class="w3-round" style="width:60%">
+            <img src="img/unlp.svg" class="w3-round" style="width:60%">
+          </div>
+          <div class="w3-third">
+            <div class="tooltip-container">
+              <button class="w3-button w3-black tooltip-trigger" onclick="window.location.href='https://www.institucional.frc.utn.edu.ar/sistemas/Download/Reglamentos/2023/1910.pdf'">UTN</button>
+              <span class="tooltip-text">Ingrese para obtener información</span>
             </div>
+            <img src="img/utn.svg" class="w3-round" style="width:60%">
+          </div>
         </div>
+        
 
         
   </div>
@@ -106,6 +176,20 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Inicializar tooltips
+tippy('.tooltip', {
+    content: 'Ingrese para obtener información', // Contenido del tooltip
+    placement: 'bottom', // Posición del tooltip (arriba, abajo, izquierda, derecha)
+    arrow: true, // Mostrar flecha del tooltip
+    theme: 'light' // Tema del tooltip (puedes usar 'light' o 'dark')
+  });
+
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+
 </script>
 
 </body>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Licenciatura en Informatica</title>
+<meta charset="UTF-8">
+ <!-- etiqueta para agregar el favicon -->
+ <link rel="shortcut icon" href="img/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- tooltip -->
+<script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6.3.3/dist/tippy-bundle.umd.min.js"></script>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+@media (max-width: 767px) {
+        .w3-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .w3-third {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .w3-third button {
+            display: block;
+            margin: 0 auto;
+        }
+      }
+
+
+.w3-button[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .w3-button[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /*  codigo para el tooltip tooltip */
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.w3-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.w3-third .tooltip-container {
+  margin-bottom: 10px; /* Ajusta este valor según sea necesario */
+}
+
+/* cierre para el tooltip */
+
+.w3-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w3-third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.w3-third .tooltip-container {
+  margin-bottom: 10px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <!-- <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"></i></a> menu hamburguesa-->
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"> <img class="logo" src="img/logo.svg" alt="logo"></a>
+  </div>
+</div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Licenciatura en Informatica</h2>
+    <p><i>
+        Un licenciado en Informática es un profesional formado en una carrera universitaria de grado donde  puede aprender a diseñar y desarrollar software y hardware de computadoras, como un sistema de gestión de bases de datos para almacenar y gestionar grandes cantidades de información de una empresa. El profesional de informática también puede ser responsable de mantener y actualizar el software y hardware existente para garantizar su correcto funcionamiento
+    </i></p>
+    <p class="w3-justify">
+        La Licenciatura en Informática se enfoca en el estudio de la teoría, el diseño, la programación y como es la implementación de sistemas complejos, es decir, se enfoca más en el ¿como? es la programación, el desarrollo , la arquitectura , ¿se usa? inteligencia artificial, entre otras cosas.
+    </p>
+
+        <div class="w3-row w3-padding-32">
+          <div class="w3-third">
+            <div class="tooltip-container">
+              <button class="w3-button w3-black tooltip-trigger" onclick="window.location.href='https://www.info.unlp.edu.ar/carreras-de-grado-lic-en-informatica/'">UNLP</button>
+              <span class="tooltip-text">Ingrese para obtener información</span>
+            </div>
+            <img src="img/unlp.svg" class="w3-round" style="width:60%">
+          </div>
+        </div>
+        
+
+        
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">&copy; 2023 Nexo. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+
+  $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+
+</script>
+
+</body>
+</html>

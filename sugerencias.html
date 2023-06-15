@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Sugerencias</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    /* .card {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    } */
+
+/*  */
+.card {
+      flex: 0 0 calc(25% - 20px);
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    #cardsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 0 0 calc(50% - 20px);
+      }
+    }
+
+    .card-red {
+      background-color: #ff8080;
+    }
+
+    .card-blue {
+      background-color: #80b3ff;
+    }
+
+    .card-green {
+      background-color: #80ff80;
+    }
+
+    .card-yellow {
+      background-color: #ffff80;
+    }
+
+    .card-orange {
+      background-color: #FFA500;
+    }
+
+    .card-gray {
+      background-color: #808080;
+    }
+
+    .card-pink {
+      background-color: #FFC0CB;
+    }
+    
+    .card-skyblue {
+      background-color: #00BFFF;
+    }
+
+    .card-emeraldgreen {
+      background-color:  #00C957;
+    }
+    .card-Turquoise {
+      background-color:  #40E0D0;
+    }
+    
+    .card-gold {
+      background-color:  #FFD700;
+    }
+   
+    
+
+    
+    /* .card-button {
+      padding: 6px 12px;
+      font-size: 14px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .card-button:hover {
+      background-color: #0056b3;
+    } */
+/*  */
+    .chip {
+      display: inline-block;
+      padding: 0 25px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 50px;
+      border-radius: 25px;
+      background-color: #929090;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .chip.selected {
+      background-color: green;
+      color: white;
+    }
+
+    #cardsContainer {
+     display: flex;
+    flex-wrap: wrap;
+}
+
+
+.espaciado
+{
+    height: 50px; /* Ajusta la altura según tus necesidades */
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card">
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large"> <img class="logo" src="img/logo.svg" alt="logo"></a>
+    </div>
+  </div>
+
+<!-- Espaciado -->
+<div class="espaciado"></div>
+
+<div class="title text-center py-5">
+  <h3>Encuentra sugerencias seleccionando tus intereses y explora diversos resultados en el rubro IT</h3>
+</div>
+  
+
+  <div id="chipsContainer">
+    <div class="chip" data-categoria="Categoria1">arreglar dispositivos tecnologicos</div>
+    <div class="chip" data-categoria="Categoria2">pagina web</div>
+    <div class="chip" data-categoria="Categoria3">videojuegos</div>
+    <div class="chip" data-categoria="Categoria4">gestion de proyectos</div>
+    <div class="chip" data-categoria="Categoria3">aplicaciones moviles</div>
+    <div class="chip" data-categoria="Categoria1">mantenimiento dispositivos tecnologicos</div>
+    <div class="chip" data-categoria="Categoria4">liderazgo</div>
+    <div class="chip" data-categoria="Categoria5">detectar errores</div>
+    <div class="chip" data-categoria="Categoria6">redes</div>
+    <div class="chip" data-categoria="Categoria6">matematica</div>
+    <div class="chip" data-categoria="Categoria11">diseño</div>
+    <div class="chip" data-categoria="Categoria1">Instalación de sistemas operativos</div>
+    <div class="chip" data-categoria="Categoria8">electronica y circuitos</div>
+    <div class="chip" data-categoria="Categoria9">diseñar y crear bases de datos</div>
+    <div class="chip" data-categoria="Categoria10">animación</div>
+  </div>
+
+  <!-- Espaciado -->
+<div class="espaciado"></div>
+
+  <div id="cardsContainer">
+    <div class="card card-red" data-categoria="Categoria1" >
+      <h5 class="card-title">Soporte tecnico</h5>
+      <p class="card-text">El soporte técnico se encarga de la resolución de problemas técnicos y el mantenimiento de sistemas informáticos.</p>
+      <!-- <a href="#" class="card-button">Botón</a> -->
+    </div>
+  
+    <div class="card card-blue" data-categoria="Categoria2" >
+      <h5 class="card-title">Desarrollador web </h5>
+      <p class="card-text">Un desarrollador web crea sitios web utilizando varios lenguajes de programación. Sus responsabilidades incluyen el diseño y el desarrollo de funcionalidades para satisfacer las necesidades de los usuarios.</p>
+    </div>
+  
+    <div class="card card-green" data-categoria="Categoria3"  >
+      <h5 class="card-title">Desarrollador de aplicaciones</h5>
+      <p class="card-text">Un desarrollador de aplicaciones móviles es alguien que diseña, desarrolla e implementa aplicaciones móviles, sobre todo para Android e iOS.</p>
+    </div>
+
+    <div class="card card-yellow" data-categoria="Categoria4">
+      <h5 class="card-title">Project Manager</h5>
+      <p class="card-text">Un Project Manager o PM es el responsable de liderar y coordinar todas las fases de un proyecto, desde la planificación hasta la entrega final.</p>
+    </div>
+
+    <div class="card card-orange" data-categoria="Categoria5">
+      <h5 class="card-title">Tester</h5>
+      <p class="card-text">Un tester son los encargados de asegurarse de que un producto o aplicación funciona correctamente antes de ser entregada al público o entregarla a un cliente..</p>
+    </div>
+
+    <div class="card card-gray" data-categoria="Categoria6">
+      <h5 class="card-title">Administrador de redes</h5>
+      <p class="card-text">La administración de redes consiste en administrar y asegurar el funcionamiento correcto de las redes informáticas,sobre todo una red libre de fallos y errores</p>
+    </div>
+
+    <div class="card card-pink" data-categoria="Categoria7">
+      <h5 class="card-title">Devops</h5>
+      <p class="card-text">Un Devops o Ingeniero DevOps se centra en la integración de los equipos de desarrollo de software y los equipos de operaciones de tecnología  para mejorar la eficiencia y la calidad de la entrega de software.</p>
+    </div>
+
+    <div class="card card-skyblue" data-categoria="Categoria8">
+      <h5 class="card-title">Robotica</h5>
+      <p class="card-text">Un ingeniero o profesional que trabaja en el área de la robótica se encarga del diseño, ensamblaje y operaciones de los robots.</p>
+    </div>
+
+    <div class="card" data-categoria="Categoria9">
+      <h5 class="card-title">Administrador de base de datos</h5>
+      <p class="card-text"> Un Administrador de base de datos o DBA , se encarga de gestionar y dar mantenimiento a las bases de datos de diferentes sistemas informáticos .</p>
+    </div>
+
+    <div class="card card-emeraldgreen" data-categoria="Categoria10">
+      <h5 class="card-title">Desarrollador de videojuegos</h5>
+      <p class="card-text">Con texto de apoyo a continuación como introducción natural a contenido adicional.</p>
+    </div>
+
+    <div class="card card-Turquoise" data-categoria="Categoria11">
+      <h5 class="card-title">Diseñador web </h5>
+      <p class="card-text">Con texto de apoyo a continuación como introducción natural a contenido adicional.</p>
+    </div>
+
+    <div class="card card-gold " data-categoria="Categoria12">
+      <h5 class="card-title">Analista de datos</h5>
+      <p class="card-text">Un analista funcional es un profesional encargado de comprender las necesidades de una empresa o cliente y traducirlas en requerimientos funcionales para desarrollar soluciones informáticas..</p>
+    </div>
+
+
+  </div>
+   
+
+
+  <script>
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   const chipsContainer = document.getElementById('chipsContainer');
+    //   const chips = document.querySelectorAll('.chip');
+    //   const cards = document.querySelectorAll('.card');
+
+    //   function applyFilter() {
+    //     const selectedCategories = Array.from(chips)
+    //       .filter(chip => chip.classList.contains('selected'))
+    //       .map(chip => chip.getAttribute('data-categoria'));
+
+    //     cards.forEach(card => {
+    //       card.style.display = 'none';
+    //       const categoria = card.getAttribute('data-categoria');
+    //       if (selectedCategories.includes(categoria) || selectedCategories.length === 0) {
+    //         card.style.display = 'block';
+    //       }
+    //     });
+    //   }
+
+    //   chips.forEach(chip => {
+    //     chip.addEventListener('click', function() {
+    //       this.classList.toggle('selected');
+    //       applyFilter();
+    //     });
+    //   });
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const chipsContainer = document.getElementById('chipsContainer');
+  const chips = document.querySelectorAll('.chip');
+  const cards = document.querySelectorAll('.card');
+
+  function applyFilter() {
+    const selectedCategories = Array.from(chips)
+      .filter(chip => chip.classList.contains('selected'))
+      .map(chip => chip.getAttribute('data-categoria'));
+
+    cards.forEach(card => {
+      card.style.display = 'none';
+      const categoria = card.getAttribute('data-categoria');
+      if (selectedCategories.includes(categoria) || selectedCategories.length === 0) {
+        card.style.display = 'block';
+      }
+    });
+  }
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', function() {
+      this.classList.toggle('selected');
+      applyFilter();
+
+      // Agregar código adicional para redirigir al hacer clic en el chip "videojuegos"
+      if (this.getAttribute('data-categoria') === 'Categoria3') {
+        cards.forEach(card => {
+          const cardCategoria = card.getAttribute('data-categoria');
+          if (cardCategoria === 'Categoria3' || cardCategoria === 'Categoria10') {
+            card.style.display = 'block';
+          }
+        });
+      }
+    });
+  });
+
+  applyFilter();
+});
+
+
+
+
+      /////
+
+
+      ///
+      
+
+    
+  //  });
+  </script>
+</body>
+</html>
+
+
+  <!-- <div id="cardsContainer">
+   
+    <div class="card" data-categoria="Categoria1">Soporte tecnico</div>
+    <div class="card" data-categoria="Categoria2">Desarrollador web </div>
+    <div class="card" data-categoria="Categoria3">Desarrollador de aplicaciones</div>
+    <div class="card" data-categoria="Categoria4">Project Manager</div>
+    <div class="card" data-categoria="Categoria5">Tester</div>
+    <div class="card" data-categoria="Categoria6">Administrador de redes</div>
+    <div class="card" data-categoria="Categoria2">Desarrollador web </div>
+    <div class="card" data-categoria="Categoria3">Desarrollador de aplicaciones</div>
+    <div class="card" data-categoria="Categoria4">Project Manager</div>
+    <div class="card" data-categoria="Categoria5">Tester</div>
+    <div class="card" data-categoria="Categoria4">Project Manager</div>
+    <div class="card" data-categoria="Categoria5">Tester</div>
+  </div> -->
