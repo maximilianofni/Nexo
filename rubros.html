@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-     <!-- etiqueta para agregar el favicon -->
-     <link rel="shortcut icon" href="img/favicon.png">
-    <title>Rubros</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- etiqueta para agregar el favicon -->
+   <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,548 +13,531 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        /* Agrega estilos adicionales según tus necesidades */
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .pagination a {
-            margin: 0 5px;
-            text-decoration: none;
-            color: blue;
-            cursor: pointer;
-        }
-
-        .pagination .active {
-            font-weight: bold;
-        }
-
-        .espaciado {
-            height: 50px; /* Ajusta la altura según tus necesidades */
-            }
-
-        .card {
-            height: 100%;
-        }    
-    </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <title>Rubros</title>
 </head>
 <body>
-      <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card">
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large"> <img class="logo" src="img/logo.svg" alt="logo"></a>
-    </div>
+
+  <div class="title text-center py-5">
+    <h1>Rubros de Areas IT</h1>
   </div>
 
-    <!-- Espaciado -->
-<div class="espaciado"></div>
-
-<div class="title text-center py-5">
-    <h1>Rubros de Areas IT</h1>
-</div>
-    
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/soporte.png" class="card-img-top">
-                    <div class="card-body">
-                        <h6 class="card-title">Soporte Tecnico</h6>
-                        <p>El soporte técnico se encarga de la resolución de problemas técnicos y el mantenimiento de sistemas informáticos.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver Información</button>               
-                    </div>
-                </div>
-            </div>
-            <!-- modal 1 -->
-            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Soporte Tecnico</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p> Si estás interesado en un trabajo de soporte técnico, es importante que sepas que esta área implica ayudar a los usuarios de una empresa con problemas de hardware y software. Algunas de las tareas más comunes que realizan los técnicos de soporte son:  </p> 
-                            <ul>
-                                <li> La resolución de problemas en computadoras, la instalación de sistemas operativos y configuración de equipos.</li>
-                                <li> El mantenimiento de los equipos, la capacitación de usuarios y la gestión de incidencias.</li>
-                            </ul>   
-                        <p>Para prepararse para un trabajo de soporte técnico, el estudiante puede considerar estudiar cualquier carrera tecnológica que incluya materias relacionadas con la informática, las redes y los sistemas. </p>
-                        <p> Además, también hay cursos como reparador de computadoras , impresoras , celulares y otros dispositvos que podrían ser útiles para complementar una carrera universitaria o para obtener habilidades especializadas en áreas específicas del soporte técnico. </p>    
-                    </div>
-                  </div>
-                </div>
-              </div> 
-                <!-- fin  modal 1  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/tester.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title"> Analista en control calidad o Tester</h6>
-                        <p>Un tester o analista de control de calidad son los encargados de asegurarse de que un producto, software o aplicación funciona correctamente antes de ser entregada al público o entregarla a un cliente.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver Información</button>  
-                    </div>
-                </div>
-            </div>
-            <!-- modal 2 -->
-            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Analista en control calidad o Tester</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p> Si estás interesado en un trabajo de Tester, es importante que sepas que se aseguran de que no haya errores, que los sitios sean fáciles de usar y que todo funcione según lo previsto. </p>
-                        <p> Las principales funciones:   </p>         
-                        <ul>
-                            <li> Son probar los sistemas informáticos para que funcionen correctamente </li>
-                            <li> Documentar los errores encontrados  </li>
-                            <li> Desarrollar procedimientos de prueba para hacer un seguimiento de los problemas como crear un plan de pruebas</li>
-                            <li> Simular el rendimiento del producto y evaluar los resultados </li>
-                            <li> Sugerir mejoras a los desarrolladores y entregar reportes del plan de pruebas.</li>
-                        </ul>
-                        <p>Para prepararse para un trabajo de tester, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conceptos de calidad, habilidades específicas para el análisis y control de calidad. </p> 
-                         Además de una carrera universitaria, existen cursos específicos para tester. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
-                    </div>
-                  </div>
-                </div>
-              </div> 
-                <!-- fin  modal 2  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/dev-mobile.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Desarrollador de aplicaciones mobiles</h6>
-                        <p>Un desarrollador de aplicaciones móviles es alguien que diseña, desarrolla e implementa aplicaciones móviles. Son responsables del desarrollo de aplicaciones sobre todo para Android e iOS. </p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver Información</button>  
-                    </div>
-                </div>
-            </div>
-                 <!-- modal 3 -->
-                 <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Desarrollador de aplicaciones mobiles</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p> Si estás interesado en un trabajo como desarrollador de aplicaciones moviles, es importante que sepas que la primera tarea es entender lo que el cliente está tratando de lograr con la aplicación. Esto permite al desarrollador de aplicaciones móviles determinar cómo debe ser la implementación y debe asegurarse de cumplir las pautas de los operadores de la tienda de aplicaciones (por ejemplo, Play Store o Apple store) </p>
-                            <p> Las principales funciones son :   </p>         
-                            <ul>
-                                <li> Análisis del proyectos a desarrollar  </li>
-                                <li> Definición de necesidades del cliente y conversión en requisitos técnicos.</li>
-                                <li> Diseño y desarrollo de aplicaciones móviles con Android Studio, Swift, Flutter, Ionic, kotlin.</li>
-                                <li> Asegurar funcionalidad entre la parte funcional y la técnica. </li>
-                                <li> Mantenerse al día con las tecnologias, los conceptos y las mejores prácticas para la programación de aplicaciones móviles </li>
-                            </ul>
-                            <p>Para prepararse para un trabajo de desarrollador de aplicaciones, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teoricos y prácticos de HTML, CSS y JavaScript,Java , Kotlin , entre otros. </p> 
-                             Además de una carrera universitaria, existen cursos específicos para tester. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- fin  modal 3  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/dev-web.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Desarrollador Web</h6>
-                        <p>El desarrollo web se divide en 3 ramas : el desarrollador Front-End  , el  desarrollador Back-End  y el  desarrollador Full-stack. </p>
-                        <p> Un desarrollador web <b>Front-End </b> se centra en la parte visible de un sitio web. </p>
-                        <p> Un desarrollador web <b> Back-End </b> se encarga de la lógica y el funcionamiento detrás de un sitio web.</p>
-                        <p> Un desarrollador web <b> Full-Stack </b> se encarga tanto del <b> front-end </b> como el  <b> back-end </b>. </p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Ver Información</button>  
-                    </div>
-                </div>
-            </div>
-               <!-- modal 4 -->
-               <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Desarrollador Web</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="height: 500px; overflow-y: auto;">
-                        <h5>Desarrollador Front-End</h5>    
-                        <p>Un desarrollador web front-end se centra en la parte visible, creando la interfaz de usuario y garantizando una experiencia visual e interactiva agradable para los usuarios. </p> 
-                        <p> Las principales funciones son :   </p>    
-                         <ul>
-                             <li> Su objetivo principal es traducir el diseño visual en código utilizando HTML, CSS y JavaScript. </li>
-                             <li> Tambien mediante el uso de JavaScript y sus librerias(frameworks) como React, Angular o Vue, el desarrollador frontend crea interacciones y elementos interactivos en el sitio web. Esto puede incluir animaciones, formularios, menús desplegables y otras características interactivas. </li>
-                            <li>  También utiliza técnicas de diseño responsivo para garantizar que el sitio se vea y funcione correctamente en computadoras de escritorio, tablets y dispositivos móviles. </li>
-                            </ul> 
-                         <p>Para prepararse para un trabajo de desarrollador web frontend, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de HTML , CSS, Javascript. </p> 
-                        <p> Además existen cursos específicos en desarrollador web frontend estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.</p>
-           
-                        <h5>Desarrollador Back-End</h5>    
-                        <p>Desarrollador web back-end se encarga del funcionamiento detrás de un sitio web. Se ocupa de la gestión de datos, la lógica de negocio, la seguridad y la comunicación con otros componentes del sistema.</p> 
-                         Es decir de las siguientes responsabilidades:
-                        <ul>
-                            <li>Manejar la lógica y las reglas de negocio, procesar y  almacenar datos,  realizar operaciones  de cálculos, validaciones y manipulaciones de datos.</li>
-                            <li>Conexión con bases de datos.</li>
-                            <li>Seguridad y autenticación.</li>
-                            <li>Escalabilidad y rendimiento</li>
-                        </ul>
-                        <p> Para prepararse para un trabajo de desarrollador web backend, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de lenguajes de programación como PHP,PYTHON O JAVA, manejo de base de datos e integración. </p> 
-                        <p> Además existen cursos específicos en desarrollo web backend. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro. </p>
-
-                        <h5>Desarrollador Full-Stack</h5>     
-                         <p> Es aquel profesional que domina las dos partes de un desarrollo web, es decir, tanto los aspectos del front end, la parte visual con la que el usuario puede interactuar, como los del back end, la gestión interna de la página y la comunicación entre el navegador y la base de datos.</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 4  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4 ">
-                <div class="card">
-                    <img src="img/pm.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Project Manager o jefe de proyectos</h6>
-                        <p>Un Project Manager o PM es el responsable de liderar y coordinar todas las fases de un proyecto, desde la planificación hasta la entrega final. Su función es asegurar que el proyecto se complete dentro de los plazos, presupuestos y alcances establecidos, garantizando una comunicación efectiva, coordinación de equipos y seguimiento constante.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Ver Información</button> 
-                    </div>
-                </div>
-            </div>
-               <!-- modal 5 -->
-               <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Project Manager o jefe de proyectos</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p> Para prepararse para un trabajo de Project Manager, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de la gestión de proyecto como Project Management Institute (PMI) y su certificación Project Management Professional (PMP),  metodologías ágiles, como Scrum o Kanban,Habilidades de liderazgo,Gestión del tiempo y planificación y Gestión de riesgos. </p>
-                         Además existen cursos específicos . Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 5  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4 ">
-                <div class="card">
-                    <img src="img/abd.png" class="card-img-top">
-                    <div class="card-body">
-                        <h6 class="card-title">Administrador de Base de datos</h6>
-                        <p> Un Administrador de base de datos o DBA , se encarga de gestionar y dar mantenimiento a las bases de datos de diferentes sistemas informáticos , es decir, consiste en verificar que sean seguras y estén actualizadas. Además de reorganizarlas para hacerlas más rápidas y fáciles de usar.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">Ver Información</button> 
-                    </div>
-                </div>
-            </div>
-             <!-- modal 6 -->
-             <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Administrador de Base de datos</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p> Este perfil se encarga de crear sistemas de respaldo para que los datos no se pierdan en caso de que haya algún problema. </p> 
-                        <p> Dentro de las responsabilidades de un Administrador de Bases de Datos:</p>
-                        <ul>
-                            <li>Se encuentra el establecimiento de políticas y procedimientos para la seguridad, el mantenimiento y el uso del sistema de gestión de bases de datos.</li>
-                            <li>Además del diseño, implementación y mantenimiento de las bases de dstos. </li>
-                            <li>Es importante que un Administrador de Bases de Datos se mantenga en constante actualización y al tanto de las nuevas tecnologías y enfoques de diseño.</li>
-                        </ul>
-                         <p>Para prepararse para un trabajo de Administrador de base de datos o DBA, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de base datos como SQL y la diferencia entre base datos relacionales y no relacionales.</p> 
-                         Además existen cursos específicos . Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 6  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/devops.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Devops</h6>
-                        <p>Un Devops o Ingeniero DevOps se centra en la integración de los equipos de desarrollo de software y los equipos de operaciones de tecnología  para mejorar la eficiencia y la calidad de la entrega de software, es decir , coordina, integra y promueve la colaboración de los equipos de desarrollo y de administración de sistemas, mediante prácticas de gestión ágiles y automatización de procesos dentro del ciclo de vida del software.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-             <!-- modal 7 -->
-             <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel"> Devops</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p> DevOps promueve un estilo de trabajo colaborativo e integrado, para que los equipos que diseñan y desarrollan los productos digitales estén en contacto permanente con los responsables de darle mantenimiento y recibir el feedback de los usuarios. </p>
-                        <p>  Para prepararse para un trabajo de Devops, el estudiante puede considerar estudiar cualquier carrera tecnológica larga y práctica profesional para  adquirir conocimiento  teóricos y prácticos de integración continua en ambientes de desarrollo. </p>
-                        <p>Además de una carrera universitaria, existen cursos específicos en Devops. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 7  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/analista-funcional.png" class="card-img-top" alt="Analista en Sistemas">
-                    <div class="card-body">
-                        <h6 class="card-title">Analista Funcional</h6>
-                        <p>Un analista funcional es un profesional encargado de comprender las necesidades de una empresa o cliente y traducirlas en requerimientos funcionales para desarrollar soluciones informáticas. Su objetivo es asegurarse de que los sistemas y aplicaciones cumplan con las expectativas y requisitos del cliente.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-             <!-- modal 8 -->
-             <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Analista Funcional</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>  El analista funcional trabaja en conjunto con los  gerentes, usuarios finales y desarrolladores de software. Su trabajo implica realizar investigaciones, recopilar información y analizar el rendimiento de sistemas existentes. También deben identificar áreas de mejora y proponer soluciones innovadoras y eficientes. </p> 
-                        <p> Además, el analista funcional debe documentar y comunicar claramente los requerimientos a los equipos de desarrollo, asegurando que se comprendan adecuadamente. También pueden participar en pruebas y validación de las soluciones implementadas. </p>
-                        <p> Para prepararse para un trabajo de analista funcional, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir habilidades técnicas relevantes, como la comprensión de sistemas informáticos, bases de datos y conceptos de programación. Además de una carrera universitaria, existen cursos en análisis funcional. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 8  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/adminr.png" class="card-img-top" alt="Analista en Sistemas">
-                    <div class="card-body">
-                        <h6 class="card-title">Administrador de Redes</h6>
-                        <p>La administración de redes consiste en administrar y asegurar el funcionamiento correcto de las redes informáticas,sobre todo una red libre de fallos y errores, antes de que afecte a los clientes o usuarios finales.
-                         Un administrador de redes implementa soluciones, resuelve problemas y mantiene la infraestructura de redes para garantizar el rendimiento.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-            <!-- modal 9 -->
-            <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Administrador de Redes</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Esto incluye asignación de protocolos y tablas de ruteo, configuración y autorización de servicios y el mantenimiento de todo el sistema de redes (con routers).también del mantenimiento de las instalaciones y servidores VPN.
-                         <p> Un administrador de redes realiza las siguientes funciones: </p>  
-                          <ul>
-                            <li> Instalar sistemas de red y computadoras (redes LAN y WAN) </li>
-                            <li> Asegurar el buen funcionamiento de la red</li>
-                            <li> Administración de usuarios, programas y documentación </li>
-                            <li> Diagnóstico de problemas y diseño de soluciones de la red </li>
-                            <li> Administrar y mantener los sistemas de seguros </li>
-                            <li> Configuración del router </li>
-                            <li> Actualización de los servidores de datos y del equipo de red </li>
-                            <li> Planificar, implementar y supervisar las redes informáticas</li>
-                          </ul>
-                        <p> Para prepararse para un trabajo de administrador de redes, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conceptos de redes y comunicaciones. </p>                            
-                        Además de una carrera universitaria, existen cursos específicos en redes. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 9  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/robotica.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Robotica</h6>
-                        <p>Un ingeniero o profesional que trabaja en el área de la robótica se encarga del diseño, ensamblaje y operaciones de los robots. Estos suelen ser programados para ahorrar tiempo y sustituir a los humanos en trabajos costosos, pesados, riesgosos y repetitivos.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal10">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-            <!-- modal 10 -->
-            <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Robotica</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Algunas tareas comunes que podrían realizar son :</p>
-                        <ul>
-                            <li>Diseño y desarrollo de robots: Los ingenieros en robótica participan en el diseño y desarrollo de robots desde cero. Esto implica el diseño de la estructura mecánica, la selección y configuración de componentes electrónicos, la integración de sensores y actuadores, y la programación del comportamiento del robot.
-                            </li>
-                            <li>
-                                Programación y control: Los ingenieros en robótica programan los robots para que realicen tareas específicas. Esto puede incluir la programación para que el robot pueda reconocer su entorno, así como la programación para guiar el movimiento.
-                            </li>
-                            <li>
-                                Integración de sistemas: Los ingenieros en robótica trabajan en la integración de sistemas robóticos en entornos específicos. Por ejemplo, pueden trabajar en la implementación de robots en líneas de producción industriales, en el diseño de sistemas robóticos para el cuidado de la salud o en la adaptación de robots para aplicaciones específicas en agricultura, logística, exploración espacial, entre otros.
-                            </li>
-                            <li>
-                                Mantenimiento y reparación: Los profesionales en robótica también se encargan del mantenimiento y la reparación de robots. Esto implica el diagnóstico de problemas, la sustitución de componentes defectuosos, la calibración de sensores y actuadores, y la resolución de cualquier otra dificultad técnica que pueda surgir.
-                            </li>
-                        </ul>
-                         
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <!-- fin  modal 10  -->
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/ux-ui.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Diseñador Web y UX/UI </h6>
-                        <p>Un diseñador web es un profesional que se encarga de crear y diseñar sitios web, enfocándose en la apariencia visual, la experiencia del usuario y la usabilidad. A diferencia del desarrollador web, el diseñador web crea el diseño y se encarga de la parte creativa. El desarrollador utiliza lenguajes de programación, sin recurrir a plantillas, se encarga de construir lo que el diseñador ha diseñado previamente.Hay diferentes tipos de diseñadores web, cada uno de los cuales se centra en un tipo de trabajo único y específico. Estos son:
-                            Diseñadores de UX  y Diseñadores de IU</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal11">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-            <!-- modal 11 -->
-            <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Diseñador Web y UX/UI</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body"  style="height: 500px; overflow-y: auto;">
-                        <p> El papel de un diseñador web gira entorno a la creación del diseño y los aspectos visuales de un sitio. Su objetivo a menudo es asegurarse de que el sitio sea visualmente agradable y fácil de usar, y lograr la retención de usuarios o visitantes: lograr que permanezcan en ella el mayor tiempo posible. </p>
-                        <p> Tambien deben diseñar páginas web de una manera que se traduzca bien en varios dispositivos o sea “responsive”. </p>  
-                        <h5>Diseñador UX</h5>
-                        <p> Un diseñador UX es aquél que se especializa en la experiencia del usuario que navega una página web. El UX hace referencia a todos los aspectos relativos de interacción con el usuario, y no sólo hace referencia al diseño, sino también al aspecto visual, la calidad del contenido, todo lo relacionado con las emociones y sentimientos que componen la marca y la transmisión de todo esto al usuario.</p>
-                        <p> Básicamente las funciones del diseñador UX se componen de: </p>
-                        <ul>
-                            <li>Investigación de mercado. Esto haría referencia a la información que pueda recopilar para hacer más llamativo el contenido del sitio web, analizando las estrategias que use la industria y dé resultados con su público objetivo.</li>
-                            <li>Implementar pruebas de usabilidad; esto ayuda a determinar si las funciones de una página web son cómodas y afines al público objetivo.</li>
-                            <li>Arquitectura de la información. El orden adecuado va a llevar al usuario indirectamente a sentir más cercanía con el objetivo de la web y tendrá una mejor experiencia al ingresar al sitio web.</li>
-                        </ul>
-                        <h5>Diseñador UI</h5>   
-                        <p>Un diseñador UI se encarga de crear visualmente la interfaz del producto y que de esa forma, tenga armonía y genere una excelente experiencia al usuario. A su vez, crea elementos interactivos y se encarga de que se vea perfecto en todo tipo de plataformas. El diseñador UI debe trabajar proporcionando guías de estilos y patrones de uso. </p>
-                        <p>Las actividades que realiza un diseñador UI son:</p>
-                         <ul>
-                            <li>Diseño de interacción respecto a la respuesta del sistema</li>
-                            <li>Guías de interacción que vendrían siendo los estados del sistema</li>
-                            <li>Diseño de elementos como botones y formularios</li>
-                            <li>Diseño visual de íconos e imágenes</li>
-                            <li>Guías de estilo como paletas de color y fuentes</li>
-                         </ul>
-                       
-                        </div>
-                      </div>
-                    </div>
-            </div>
-             <!-- fin  modal 11  -->
-             <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/ciberseguridad.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Ciberseguridad</h6>
-                        <p>Los profesionales de la ciberseguridad crean, prueban y analizan sistemas para mantener los datos y la información a salvo de los hackers informáticos y otras amenazas externas. Trabajan para identificar amenazas y encontrar formas de mantener segura la red informática interna de una organización y protegerla frente a amenazas como virus, ataques con contraseñas y otras intrusiones.  </p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal12">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-                   <!-- modal 12 -->
-                   <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Ciberseguridad</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                         <p>Su principal labor, pasa no solo por identificar posibles amenazas emergentes, sino también proteger el sistema para que nadie pueda entrar.</p>   
-                         <p>Algunas actividades comunes que podrían llevar a cabo son :</p>
-                         <ul>
-                            <li>Evaluación de riesgos: Realizar análisis de riesgos para identificar vulnerabilidades y evaluar las posibles amenazas que podrían afectar a los sistemas y datos de una organización.
-                            </li>
-                            <li>Implementación de medidas de seguridad: Configurar y mantener sistemas de seguridad, como firewalls, sistemas de detección de intrusiones, sistemas de prevención de pérdida de datos, y encriptación de datos, para proteger los activos digitales de la organización.
-                            </li>
-                            <li>Monitoreo y detección de amenazas: Supervisar constantemente los sistemas en busca de actividad sospechosa o intentos de intrusión. Utilizar herramientas y técnicas de detección de amenazas para identificar y responder rápidamente a incidentes de seguridad.</li>
-                         </ul>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- fin  modal 12  -->        
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                    <img src="img/analisis-de-datos.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h6 class="card-title">Analista de Datos</h6>
-                        <p>El analista de datos o Data Analyst es la persona encargada de recopilar, filtrar e interpretar bases de datos para ayudar a que las empresas tomen decisiones.  </p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal13">Ver Información</button>
-                    </div>
-                </div>
-            </div>
-                   <!-- modal 13 -->
-                   <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Analista de Datos</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                         <p>Su principal labor, pasa no solo por identificar posibles amenazas emergentes, sino también proteger el sistema para que nadie pueda entrar.</p>   
-                         
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- fin  modal 13  -->        
-        </div>
-
+  <div class="container">
+    <div id="cardContainer" class="row custom-row-style g-3">
+      <!-- Cards -->
     </div>
 
+    <!-- Paginación -->
+    <nav id="pagination" aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+      </ul>
+    </nav>
+  </div>
 
-    
-<!-- Paginación -->
-<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center pagination-lg">
-      <li class="page-item"><a class="page-link active" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li> 
-    </ul>
-  </nav>
-  
-  <!-- JavaScript -->
+  <!-- Modales -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Soporte Tecnico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Si estás interesado en un trabajo de soporte técnico, es importante que sepas que esta área implica ayudar a los usuarios de una empresa con problemas de hardware y software. Algunas de las tareas más comunes que realizan los técnicos de soporte son:</p>
+          <ul>
+            <li>La resolución de problemas en computadoras, la instalación de sistemas operativos y configuración de equipos.</li>
+            <li>El mantenimiento de los equipos, la capacitación de usuarios y la gestión de incidencias.</li>
+          </ul>
+          <p>Para prepararse para un trabajo de soporte técnico, el estudiante puede considerar estudiar cualquier carrera tecnológica que incluya materias relacionadas con la informática, las redes y los sistemas. Además, también hay cursos como reparador de computadoras, impresoras, celulares y otros dispositivos que podrían ser útiles para complementar una carrera universitaria o para obtener habilidades especializadas en áreas específicas del soporte técnico.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal 1 -->
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Analista en control calidad o Tester</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p> Si estás interesado en un trabajo de Tester, es importante que sepas que se aseguran de que no haya errores, que los sitios sean fáciles de usar y que todo funcione según lo previsto. </p>
+            <p> Las principales funciones:   </p>         
+            <ul>
+                <li> Son probar los sistemas informáticos para que funcionen correctamente </li>
+                <li> Documentar los errores encontrados  </li>
+                <li> Desarrollar procedimientos de prueba para hacer un seguimiento de los problemas como crear un plan de pruebas</li>
+                <li> Simular el rendimiento del producto y evaluar los resultados </li>
+                <li> Sugerir mejoras a los desarrolladores y entregar reportes del plan de pruebas.</li>
+            </ul>
+            <p>Para prepararse para un trabajo de tester, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conceptos de calidad, habilidades específicas para el análisis y control de calidad. </p> 
+             Además de una carrera universitaria, existen cursos específicos para tester. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal 2 -->
+<!-- modal 3 -->
+           <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Desarrollador de aplicaciones mobiles</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Si estás interesado en un trabajo como desarrollador de aplicaciones moviles, es importante que sepas que la primera tarea es entender lo que el cliente está tratando de lograr con la aplicación. Esto permite al desarrollador de aplicaciones móviles determinar cómo debe ser la implementación y debe asegurarse de cumplir las pautas de los operadores de la tienda de aplicaciones (por ejemplo, Play Store o Apple store) </p>
+                    <p> Las principales funciones son :   </p>         
+                    <ul>
+                        <li> Análisis del proyectos a desarrollar  </li>
+                        <li> Definición de necesidades del cliente y conversión en requisitos técnicos.</li>
+                        <li> Diseño y desarrollo de aplicaciones móviles con Android Studio, Swift, Flutter, Ionic, kotlin.</li>
+                        <li> Asegurar funcionalidad entre la parte funcional y la técnica. </li>
+                        <li> Mantenerse al día con las tecnologias, los conceptos y las mejores prácticas para la programación de aplicaciones móviles </li>
+                    </ul>
+                    <p>Para prepararse para un trabajo de desarrollador de aplicaciones, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teoricos y prácticos de HTML, CSS y JavaScript,Java , Kotlin , entre otros. </p> 
+                     Además de una carrera universitaria, existen cursos específicos para tester. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
+                </div>
+              </div>
+            </div>
+        </div>
+ <!-- fin  modal 3  -->
+  <!-- modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Desarrollador Web</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="height: 500px; overflow-y: auto;">
+            <h5>Desarrollador Front-End</h5>    
+            <p>Un desarrollador web front-end se centra en la parte visible, creando la interfaz de usuario y garantizando una experiencia visual e interactiva agradable para los usuarios. </p> 
+            <p> Las principales funciones son :   </p>    
+             <ul>
+                 <li> Su objetivo principal es traducir el diseño visual en código utilizando HTML, CSS y JavaScript. </li>
+                 <li> Tambien mediante el uso de JavaScript y sus librerias(frameworks) como React, Angular o Vue, el desarrollador frontend crea interacciones y elementos interactivos en el sitio web. Esto puede incluir animaciones, formularios, menús desplegables y otras características interactivas. </li>
+                <li>  También utiliza técnicas de diseño responsivo para garantizar que el sitio se vea y funcione correctamente en computadoras de escritorio, tablets y dispositivos móviles. </li>
+                </ul> 
+             <p>Para prepararse para un trabajo de desarrollador web frontend, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de HTML , CSS, Javascript. </p> 
+            <p> Además existen cursos específicos en desarrollador web frontend estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.</p>
+
+            <h5>Desarrollador Back-End</h5>    
+            <p>Desarrollador web back-end se encarga del funcionamiento detrás de un sitio web. Se ocupa de la gestión de datos, la lógica de negocio, la seguridad y la comunicación con otros componentes del sistema.</p> 
+             Es decir de las siguientes responsabilidades:
+            <ul>
+                <li>Manejar la lógica y las reglas de negocio, procesar y  almacenar datos,  realizar operaciones  de cálculos, validaciones y manipulaciones de datos.</li>
+                <li>Conexión con bases de datos.</li>
+                <li>Seguridad y autenticación.</li>
+                <li>Escalabilidad y rendimiento</li>
+            </ul>
+            <p> Para prepararse para un trabajo de desarrollador web backend, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de lenguajes de programación como PHP,PYTHON O JAVA, manejo de base de datos e integración. </p> 
+            <p> Además existen cursos específicos en desarrollo web backend. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro. </p>
+
+            <h5>Desarrollador Full-Stack</h5>     
+             <p> Es aquel profesional que domina las dos partes de un desarrollo web, es decir, tanto los aspectos del front end, la parte visual con la que el usuario puede interactuar, como los del back end, la gestión interna de la página y la comunicación entre el navegador y la base de datos.</p>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 4  -->
+   <!-- modal 5 -->
+   <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Project Manager o jefe de proyectos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p> Para prepararse para un trabajo de Project Manager, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de la gestión de proyecto como Project Management Institute (PMI) y su certificación Project Management Professional (PMP),  metodologías ágiles, como Scrum o Kanban,Habilidades de liderazgo,Gestión del tiempo y planificación y Gestión de riesgos. </p>
+             Además existen cursos específicos . Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 5  -->
+<!-- modal 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Administrador de Base de datos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p> Este perfil se encarga de crear sistemas de respaldo para que los datos no se pierdan en caso de que haya algún problema. </p> 
+            <p> Dentro de las responsabilidades de un Administrador de Bases de Datos:</p>
+            <ul>
+                <li>Se encuentra el establecimiento de políticas y procedimientos para la seguridad, el mantenimiento y el uso del sistema de gestión de bases de datos.</li>
+                <li>Además del diseño, implementación y mantenimiento de las bases de dstos. </li>
+                <li>Es importante que un Administrador de Bases de Datos se mantenga en constante actualización y al tanto de las nuevas tecnologías y enfoques de diseño.</li>
+            </ul>
+             <p>Para prepararse para un trabajo de Administrador de base de datos o DBA, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conocimiento  teóricos y prácticos de base datos como SQL y la diferencia entre base datos relacionales y no relacionales.</p> 
+             Además existen cursos específicos . Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 6  -->
+ <!-- modal 7 -->
+ <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Devops</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p> DevOps promueve un estilo de trabajo colaborativo e integrado, para que los equipos que diseñan y desarrollan los productos digitales estén en contacto permanente con los responsables de darle mantenimiento y recibir el feedback de los usuarios. </p>
+            <p>  Para prepararse para un trabajo de Devops, el estudiante puede considerar estudiar cualquier carrera tecnológica larga y práctica profesional para  adquirir conocimiento  teóricos y prácticos de integración continua en ambientes de desarrollo. </p>
+            <p>Además de una carrera universitaria, existen cursos específicos en Devops. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.</p>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 7  -->
+ <!-- modal 8 -->
+ <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Analista Funcional</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>  El analista funcional trabaja en conjunto con los  gerentes, usuarios finales y desarrolladores de software. Su trabajo implica realizar investigaciones, recopilar información y analizar el rendimiento de sistemas existentes.</p> 
+            <p> Además, el analista funcional debe documentar y comunicar claramente los requerimientos a los equipos de desarrollo, asegurando que se comprendan adecuadamente. También pueden participar en pruebas y validación de las soluciones implementadas. </p>
+            <p> Para prepararse para un trabajo de analista funcional, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir habilidades técnicas relevantes, como la comprensión de sistemas informáticos, bases de datos y conceptos de programación. Además de una carrera universitaria, existen cursos en análisis funcional. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.</p>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 8  -->
+<!-- modal 9 -->
+<div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Administrador de Redes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+             <p> Un administrador de redes realiza las siguientes funciones: </p>  
+              <ul>
+                <li> Instalar sistemas de red y computadoras (redes LAN y WAN) </li>
+                <li> Asegurar el buen funcionamiento de la red</li>
+                <li> Administración de usuarios, programas y documentación </li>
+                <li> Diagnóstico de problemas y diseño de soluciones de la red </li>
+                <li> Administrar y mantener los sistemas de seguros </li>
+                <li> Configuración del router </li>
+                <li> Actualización de los servidores de datos y del equipo de red </li>
+                <li> Planificar, implementar y supervisar las redes informáticas</li>
+              </ul>
+            <p> Para prepararse para un trabajo de administrador de redes, el estudiante puede considerar estudiar cualquier carrera tecnológica para  adquirir conceptos de redes y comunicaciones. </p>                            
+            Además de una carrera universitaria, existen cursos específicos en redes. Estos cursos pueden ser de corta duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 9  -->
+<!-- modal 10 -->
+<div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Robotica</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Algunas tareas comunes que podrían realizar un ingeniero en robótica son :</p>
+            <ul>
+                <li>Diseño y desarrollo de robots: Esto implica el diseño de la estructura mecánica, la selección y configuración de componentes electrónicos, la integración de sensores y actuadores, y la programación del comportamiento del robot.
+                </li>
+                <li>
+                    Programación y control: Esto puede incluir la programación para que el robot pueda reconocer su entorno, así como la programación para guiar el movimiento.
+                </li>
+                <li>
+                    Integración de sistemas: Los ingenieros en robótica trabajan en la integración de sistemas robóticos en entornos específicos. Por ejemplo, pueden trabajar en la implementación de robots en líneas de producción industriales, en el diseño de sistemas robóticos para el cuidado de la salud o en la adaptación de robots para aplicaciones específicas en agricultura, logística, exploración espacial, entre otros.
+                </li>
+                <li>
+                    Mantenimiento y reparación: Los profesionales en robótica también se encargan del mantenimiento y la reparación de robots. Esto implica el diagnóstico de problemas, la sustitución de componentes defectuosos, la calibración de sensores y actuadores, y la resolución de cualquier otra dificultad técnica que pueda surgir.
+                </li>
+            </ul>
+            Para prepararse para un trabajo de Robotica, el estudiante puede considerar estudiar cualquier carrera tecnológica ademas de otras carreras para  adquirir conceptos de electronica y circuitos. </p>                            
+            Además de una carrera universitaria. Estos cursos pueden ser de corta duración como Arduino y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.    
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 10  --> 
+<!-- modal 11 -->
+<div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Diseñador Web y UX/UI</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"  style="height: 500px; overflow-y: auto;">
+        <p> El papel de un diseñador web gira entorno a la creación del diseño y los aspectos visuales de un sitio. Su objetivo a menudo es asegurarse de que el sitio sea visualmente agradable y fácil de usar, y lograr la retención de usuarios o visitantes: lograr que permanezcan en ella el mayor tiempo posible. </p>
+        <p> Tambien deben diseñar páginas web de una manera que se traduzca bien en varios dispositivos o sea “responsive”. </p>  
+        <h5>Diseñador UX</h5>
+        <p> Un diseñador UX es aquél que se especializa en la experiencia del usuario que navega una página web. El UX hace referencia a todos los aspectos relativos de interacción con el usuario, y no sólo hace referencia al diseño, sino también al aspecto visual, la calidad del contenido, todo lo relacionado con las emociones y sentimientos que componen la marca y la transmisión de todo esto al usuario.</p>
+        <p> Básicamente las funciones del diseñador UX se componen de: </p>
+        <ul>
+            <li>Investigación de mercado. Esto haría referencia a la información que pueda recopilar para hacer más llamativo el contenido del sitio web, analizando las estrategias que use la industria y dé resultados con su público objetivo.</li>
+            <li>Implementar pruebas de usabilidad; esto ayuda a determinar si las funciones de una página web son cómodas y afines al público objetivo.</li>
+            <li>Arquitectura de la información. El orden adecuado va a llevar al usuario indirectamente a sentir más cercanía con el objetivo de la web y tendrá una mejor experiencia al ingresar al sitio web.</li>
+        </ul>
+        <h5>Diseñador UI</h5>   
+        <p>Un diseñador UI se encarga de crear visualmente la interfaz del producto y que de esa forma, tenga armonía y genere una excelente experiencia al usuario. A su vez, crea elementos interactivos y se encarga de que se vea perfecto en todo tipo de plataformas. El diseñador UI debe trabajar proporcionando guías de estilos y patrones de uso. </p>
+        <p>Las actividades que realiza un diseñador UI son:</p>
+         <ul>
+            <li>Diseño de interacción respecto a la respuesta del sistema</li>
+            <li>Guías de interacción que vendrían siendo los estados del sistema</li>
+            <li>Diseño de elementos como botones y formularios</li>
+            <li>Diseño visual de íconos e imágenes</li>
+            <li>Guías de estilo como paletas de color y fuentes</li>
+         </ul>
+       
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 11  -->
+  <!-- modal 12 -->
+  <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ciberseguridad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Su principal labor, pasa no solo por identificar posibles amenazas emergentes, sino también proteger el sistema para que nadie pueda entrar.</p>   
+         <p>Algunas actividades comunes que podrían llevar a cabo son :</p>
+         <ul>
+            <li>Evaluación de riesgos: Realizar análisis de riesgos para identificar vulnerabilidades y evaluar las posibles amenazas que podrían afectar a los sistemas y datos de una organización.
+            </li>
+            <li>Implementación de medidas de seguridad: Configurar y mantener sistemas de seguridad, como firewalls, sistemas de detección de intrusiones, sistemas de prevención de pérdida de datos, y encriptación de datos, para proteger los activos digitales de la organización.
+            </li>
+            <li>Monitoreo y detección de amenazas: Supervisar constantemente los sistemas en busca de actividad sospechosa o intentos de intrusión. Utilizar herramientas y técnicas de detección de amenazas para identificar y responder rápidamente a incidentes de seguridad.</li>
+         </ul>
+         Para prepararse para un trabajo de Ciberseguridad, el estudiante puede considerar estudiar cualquier carrera tecnológica </p>                            
+            Además de una carrera universitaria, existen cursos específicos en redes y seguridad. Estos cursos pueden ser de corta duración como de larga duración y se centran en brindar las habilidades y conocimientos necesarios para trabajar en este rubro.  
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 12  -->  
+  <!-- modal 13 -->
+  <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Analista de Datos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Un analista de datos se dedica a examinar y analizar grandes cantidades de datos para encontrar patrones, tendencias y relaciones. Utiliza herramientas como Hojas de cálculo,SQL, Power BI y QlikView, entre otras cosas. y técnicas especializadas para organizar, limpiar y visualizar los datos de manera comprensible.
+           El objetivo principal del analista de datos es proporcionar información y recomendaciones basadas en los datos para respaldar la toma de decisiones estratégicas en una organización.</p>   
+           Los analistas de datos utilizan habilidades en matemáticas, estadísticas y programación para trabajar con datos y extraer información significativa. 
+           También pueden colaborar con otros equipos, como el de marketing o el de investigación, para identificar oportunidades de mejora y optimización basadas en los hallazgos obtenidos del análisis de datos.
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin  modal 13  -->          
+
+  <!-- Otros modales... -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
   <script>
-    // JavaScript para manejar la paginación activa
-    const cards = document.querySelectorAll(".container .card");
-    const paginationLinks = document.querySelectorAll(".pagination a");
-    const cardsPerPage = 6;
-  
-    showPage(1);
-  
-    paginationLinks.forEach((link, index) => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        showPage(index + 1);
-        paginationLinks.forEach(link => link.classList.remove("active"));
-        this.classList.add("active");
-      });
-    });
-  
-    function showPage(pageNumber) {
-      const startIndex = (pageNumber - 1) * cardsPerPage;
-      const endIndex = startIndex + cardsPerPage;
-  
-      cards.forEach((card, index) => {
-        if (index >= startIndex && index < endIndex) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
+    var cardContainer = document.getElementById('cardContainer');
+    var pagination = document.getElementById('pagination');
+
+    var currentPage = 0;
+    var cardsPerPage = 3;
+    var cardsData = [
+      {
+        title: 'Soporte Tecnico',
+        description: 'El soporte técnico se encarga de la resolución de problemas técnicos, el mantenimiento de sistemas informáticos y habilidades de atención al cliente.',
+        image: 'img/soporte.png',
+        modalId: 'modal1'
+      },
+      {
+        title: 'Analista en control calidad o Tester',
+        description: 'Un analista de control de calidad son los encargados de asegurarse de que una aplicación funciona correctamente antes de ser entregada al público o entregarla a un cliente.',
+        image: 'img/tester.png',
+        modalId: 'modal2'
+      },
+     {
+        title: 'Desarrollador de aplicaciones mobiles',
+        description: 'Un desarrollador de aplicaciones móviles es alguien que diseña, desarrolla e implementa aplicaciones móviles. Son responsables del desarrollo de aplicaciones sobre todo para Android e iOS.',
+        image: 'img/dev-mobile.png',
+        modalId: 'modal3'
+      },
+      {
+        title: 'Desarrollador Web',
+        description: 'El desarrollo web se divide en 3 ramas : Por un lado estan los desarrolladores Front-End que se encargan de lo visual , por otro lado lado los desarrolladores Back-End que se encargan de la parte interna y por ultimo los desarrolladores Full-stack que domina las dos partes tanto el front-end y back-end.',
+        image: 'img/dev-web.png',
+        modalId: 'modal4'
+      },
+      {
+        title: 'Project Manager o Jefe de proyectos',
+        description: 'Un Project Manager o PM es el responsable de liderar y coordinar todas las fases de un proyecto, desde la planificación hasta la entrega final. ',
+        image: 'img/pm.png',
+        modalId: 'modal5'
+      },
+      {
+        title: 'Administrador de Base de datos',
+        description: 'Un Administrador de base de datos o DBA , se encarga de gestionar y dar mantenimiento a las bases de datos de diferentes sistemas informáticos.',
+        image: 'img/abd.png',
+        modalId: 'modal6'
+      },
+      {
+        title: 'Devops',
+        description: 'Un Devops o Ingeniero DevOps se centra en la integración de los equipos de desarrollo de software para mejorar la eficiencia y la calidad de la entrega de software.Utilizando automatización, infraestructura como código y tecnologías de contenedores.',
+        image: 'img/devops.png',
+        modalId: 'modal7'
+      },
+      {
+        title: 'Analista Funcional',
+        description: 'Un analista funcional es un encargado de comprender las necesidades de una empresa o cliente y traducirlas en requerimientos funcionales para desarrollar soluciones informáticas.',
+        image: 'img/analista-funcional.png',
+        modalId: 'modal8'
+      },
+      {
+        title: 'Administrador de Redes',
+        description: 'La administración de redes consiste en administrar y asegurar el funcionamiento correcto de las redes informáticas,sobre todo una red libre de fallos, antes de que afecte a los usuarios finales.',
+        image: 'img/adminr.png',
+        modalId: 'modal9'
+      },
+      {
+        title: 'Robotica',
+        description: 'Un profesional que trabaja en el área de la robótica se encarga del diseño, ensamblaje y operaciones de los robots. Estos suelen ser programados para ahorrar tiempo y sustituir a los humanos en trabajos costosos, pesados, riesgosos y repetitivos.',
+        image: 'img/robotica.png',
+        modalId: 'modal10'
+      },
+      {
+        title: 'Diseñador Web y UX/UI ',
+        description: 'Un diseñador web se encarga de crear y diseñar sitios web, enfocándose en la apariencia visual, la experiencia del usuario y la usabilidad. Hay diferentes tipos de diseñadores web, cada uno de los cuales se centra en un tipo de trabajo único y específico. Estos son: Diseñadores UX y Diseñadores IU',
+        image: 'img/ux-ui.png',
+        modalId: 'modal11'
+      },
+      {
+        title: 'Ciberseguridad ',
+        description: 'La ciberseguridad se trata de proteger nuestros dispositivos (como computadoras y teléfonos) y la información que tenemos en ellos para evitar que personas malintencionadas nos hagan daño. Los expertos en ciberseguridad utilizan herramientas para detectar y prevenir ataques cibernéticos, como los virus o los intentos de robo de información. ',
+        image: 'img/ciberseguridad.png',
+        modalId: 'modal12'
+      },
+      {
+        title: 'Analista de Datos o Data Analyst ',
+        description: 'El analista de datos o Data Analyst es la persona encargada de recopilar, filtrar e interpretar bases de datos para ayudar a que las empresas tomen decisiones.',
+        image: 'img/analisis-de-datos.png',
+        modalId: 'modal13'
+      },
+      // Agrega más objetos de datos según sea necesario
+    ];
+
+    function createCard(data) {
+      var cardDiv = document.createElement('div');
+      cardDiv.className = 'col-12 col-md-6 col-lg-4 mb-4';
+
+      var card = document.createElement('div');
+      card.className = 'card';
+
+      var image = document.createElement('img');
+      image.src = data.image;
+      image.className = 'card-img-top';
+
+      var cardBody = document.createElement('div');
+      cardBody.className = 'card-body';
+
+      var title = document.createElement('h6');
+      title.className = 'card-title';
+      title.textContent = data.title;
+
+      var description = document.createElement('p');
+      description.textContent = data.description;
+
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'btn btn-primary';
+      button.setAttribute('data-bs-toggle', 'modal');
+    //   button.setAttribute('data-bs-target', '#modal');
+      button.setAttribute('data-bs-target', '#' + data.modalId);
+      button.textContent = 'Ver Información';
+
+      cardBody.appendChild(title);
+      cardBody.appendChild(description);
+      cardBody.appendChild(button);
+
+      card.appendChild(image);
+      card.appendChild(cardBody);
+
+      cardDiv.appendChild(card);
+
+      return cardDiv;
     }
+
+    function renderCards(page) {
+      var startIndex = page * cardsPerPage;
+      var endIndex = startIndex + cardsPerPage;
+
+      var fragment = document.createDocumentFragment();
+
+      for (var i = startIndex; i < endIndex && i < cardsData.length; i++) {
+        var card = createCard(cardsData[i]);
+        fragment.appendChild(card);
+      }
+
+      cardContainer.innerHTML = '';
+      cardContainer.appendChild(fragment);
+    }
+
+    function renderPagination() {
+      var numPages = Math.ceil(cardsData.length / cardsPerPage);
+
+      var paginationUl = pagination.querySelector('ul');
+      paginationUl.innerHTML = '';
+
+      for (var i = 0; i < numPages; i++) {
+        var pageLi = document.createElement('li');
+        pageLi.className = 'page-item';
+        var pageLink = document.createElement('a');
+        pageLink.className = 'page-link';
+        pageLink.href = '#';
+        pageLink.textContent = i + 1;
+        pageLink.addEventListener('click', function (event) {
+          event.preventDefault();
+          var page = parseInt(this.textContent) - 1;
+          goToPage(page);
+        });
+        pageLi.appendChild(pageLink);
+        paginationUl.appendChild(pageLi);
+      }
+    }
+
+    function goToPage(page) {
+      currentPage = page;
+      renderCards(currentPage);
+
+      var paginationLinks = pagination.getElementsByTagName('a');
+      for (var i = 0; i < paginationLinks.length; i++) {
+        paginationLinks[i].classList.remove('active');
+      }
+      paginationLinks[currentPage].classList.add('active');
+    }
+
+    renderCards(currentPage);
+    renderPagination();
   </script>
-  
+
 </body>
 </html>

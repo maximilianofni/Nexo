@@ -11,23 +11,6 @@
      <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
-    /* .card {
-      width: 200px;
-      height: 100px;
-      background-color: lightgray;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      padding: 10px;
-      box-sizing: border-box;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 16px;
-      font-weight: bold;
-    } */
-
-/*  */
 .card {
       flex: 0 0 calc(25% - 20px);
       margin-right: 10px;
@@ -73,7 +56,7 @@
     }
 
     .card-gray {
-      background-color: #808080;
+      background-color: #dadada;
     }
 
     .card-pink {
@@ -94,25 +77,15 @@
     .card-gold {
       background-color:  #FFD700;
     }
-   
-    
-
-    
-    /* .card-button {
-      padding: 6px 12px;
-      font-size: 14px;
-      text-decoration: none;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    .card-Beige {
+      background-color: #F5F5DC;
     }
+    .card-Lavanda {
+      background-color: #E6E6FA;
+    }
+    
 
-    .card-button:hover {
-      background-color: #0056b3;
-    } */
-/*  */
+   
     .chip {
       display: inline-block;
       padding: 0 25px;
@@ -120,7 +93,7 @@
       font-size: 18px;
       line-height: 50px;
       border-radius: 25px;
-      background-color: #929090;
+      background-color: #dadada;
       margin-right: 10px;
       margin-bottom: 10px;
       cursor: pointer;
@@ -143,20 +116,15 @@
 }
 
 
+  /* .chip-reset.selected {
+    background-color: red !important;
+    color: white !important;
+  } */
 
-  </style>
+</style>
 </head>
 <body>
 
-<!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card">
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large"> <img class="logo" src="img/logo.svg" alt="logo"></a>
-    </div>
-  </div>
-
-<!-- Espaciado -->
-<div class="espaciado"></div>
 
 <div class="title text-center py-5">
   <h3>Encuentra sugerencias seleccionando tus intereses y explora diversos resultados en el rubro IT</h3>
@@ -173,12 +141,16 @@
     <div class="chip" data-categoria="Categoria4">liderazgo</div>
     <div class="chip" data-categoria="Categoria5">detectar errores</div>
     <div class="chip" data-categoria="Categoria6">redes</div>
-    <div class="chip" data-categoria="Categoria6">matematica</div>
+    <div class="chip" data-categoria="Categoria14">matematica</div>
     <div class="chip" data-categoria="Categoria11">diseño</div>
-    <div class="chip" data-categoria="Categoria1">Instalación de sistemas operativos</div>
+    <div class="chip" data-categoria="Categoria1">instalación de sistemas operativos</div>
     <div class="chip" data-categoria="Categoria8">electronica y circuitos</div>
     <div class="chip" data-categoria="Categoria9">diseñar y crear bases de datos</div>
     <div class="chip" data-categoria="Categoria10">animación</div>
+    <div class="chip" data-categoria="Categoria14">estadisticas</div>
+    <div class="chip" data-categoria="Categoria14">investigacion</div>
+    <!-- <div class="chip chip-reset" data-categoria="">Reset</div> -->
+
   </div>
 
   <!-- Espaciado -->
@@ -188,7 +160,6 @@
     <div class="card card-red" data-categoria="Categoria1" >
       <h5 class="card-title">Soporte tecnico</h5>
       <p class="card-text">El soporte técnico se encarga de la resolución de problemas técnicos y el mantenimiento de sistemas informáticos.</p>
-      <!-- <a href="#" class="card-button">Botón</a> -->
     </div>
   
     <div class="card card-blue" data-categoria="Categoria2" >
@@ -208,7 +179,7 @@
 
     <div class="card card-orange" data-categoria="Categoria5">
       <h5 class="card-title">Tester</h5>
-      <p class="card-text">Un tester son los encargados de asegurarse de que un producto o aplicación funciona correctamente antes de ser entregada al público o entregarla a un cliente..</p>
+      <p class="card-text">Un tester son los encargados de asegurarse de que un producto o aplicación funciona correctamente antes de ser entregada al público o entregarla a un cliente.</p>
     </div>
 
     <div class="card card-gray" data-categoria="Categoria6">
@@ -233,52 +204,34 @@
 
     <div class="card card-emeraldgreen" data-categoria="Categoria10">
       <h5 class="card-title">Desarrollador de videojuegos</h5>
-      <p class="card-text">Con texto de apoyo a continuación como introducción natural a contenido adicional.</p>
+      <p class="card-text">Un desarrollador de videojuegos crea y programa juegos usando lenguajes como C#, C++ o GDScript, y trabaja con gráficos y efectos visuales. Los entornos de desarrollo de videojuegos populares son Unity (para juegos 2D y 3D) y Unreal Engine.</p>
     </div>
 
     <div class="card card-Turquoise" data-categoria="Categoria11">
       <h5 class="card-title">Diseñador web </h5>
-      <p class="card-text">Con texto de apoyo a continuación como introducción natural a contenido adicional.</p>
+      <p class="card-text">El diseñador web crea la apariencia visual de sitios usando herramientas como Figma y Adobe XD. Selecciona colores y elementos para una presentación atractiva y funcional. También se preocupa por la usabilidad y accesibilidad para una experiencia positiva.</p>
     </div>
 
     <div class="card card-gold " data-categoria="Categoria12">
-      <h5 class="card-title">Analista de datos</h5>
-      <p class="card-text">Un analista funcional es un profesional encargado de comprender las necesidades de una empresa o cliente y traducirlas en requerimientos funcionales para desarrollar soluciones informáticas..</p>
+      <h5 class="card-title">Analista Funcional</h5>
+      <p class="card-text">Un analista funcional es un profesional encargado de comprender las necesidades de una empresa o cliente y traducirlas en requerimientos funcionales para desarrollar soluciones informáticas.</p>
     </div>
 
+    <div class="card card-Beige " data-categoria="Categoria13">
+      <h5 class="card-title">CiberSeguridad</h5>
+      <p class="card-text">La ciberseguridad se trata de proteger nuestros dispositivos (como computadoras y teléfonos) y la información que tenemos en ellos para evitar que personas malintencionadas nos hagan daño. </p>
+    </div>
+
+    <div class="card card-Lavanda " data-categoria="Categoria14">
+      <h5 class="card-title">Analista de datos o Data Analitics</h5>
+      <p class="card-text">Un analista de datos se dedica a examinar y analizar grandes cantidades de datos para encontrar patrones, tendencias para ayudar a que las empresas tomen decisiones. </p>
+    </div>
 
   </div>
    
 
-
   <script>
-    // document.addEventListener('DOMContentLoaded', function() {
-    //   const chipsContainer = document.getElementById('chipsContainer');
-    //   const chips = document.querySelectorAll('.chip');
-    //   const cards = document.querySelectorAll('.card');
-
-    //   function applyFilter() {
-    //     const selectedCategories = Array.from(chips)
-    //       .filter(chip => chip.classList.contains('selected'))
-    //       .map(chip => chip.getAttribute('data-categoria'));
-
-    //     cards.forEach(card => {
-    //       card.style.display = 'none';
-    //       const categoria = card.getAttribute('data-categoria');
-    //       if (selectedCategories.includes(categoria) || selectedCategories.length === 0) {
-    //         card.style.display = 'block';
-    //       }
-    //     });
-    //   }
-
-    //   chips.forEach(chip => {
-    //     chip.addEventListener('click', function() {
-    //       this.classList.toggle('selected');
-    //       applyFilter();
-    //     });
-    //   });
-
-    document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
   const chipsContainer = document.getElementById('chipsContainer');
   const chips = document.querySelectorAll('.chip');
   const cards = document.querySelectorAll('.card');
@@ -311,40 +264,28 @@
           }
         });
       }
+  
+  // Agregar código adicional para redirigir al hacer clic en el chip "redes"
+  if (this.getAttribute('data-categoria') === 'Categoria6') {
+      cards.forEach(card => {
+        const cardCategoria = card.getAttribute('data-categoria');
+        if (cardCategoria === 'Categoria6' ||  cardCategoria === 'Categoria13') {
+          card.style.display = 'block';
+        }
+      });
+    }
+
+//
+
+
+//
     });
   });
 
   applyFilter();
 });
 
-
-
-
-      /////
-
-
-      ///
-      
-
     
-  //  });
   </script>
 </body>
 </html>
-
-
-  <!-- <div id="cardsContainer">
-   
-    <div class="card" data-categoria="Categoria1">Soporte tecnico</div>
-    <div class="card" data-categoria="Categoria2">Desarrollador web </div>
-    <div class="card" data-categoria="Categoria3">Desarrollador de aplicaciones</div>
-    <div class="card" data-categoria="Categoria4">Project Manager</div>
-    <div class="card" data-categoria="Categoria5">Tester</div>
-    <div class="card" data-categoria="Categoria6">Administrador de redes</div>
-    <div class="card" data-categoria="Categoria2">Desarrollador web </div>
-    <div class="card" data-categoria="Categoria3">Desarrollador de aplicaciones</div>
-    <div class="card" data-categoria="Categoria4">Project Manager</div>
-    <div class="card" data-categoria="Categoria5">Tester</div>
-    <div class="card" data-categoria="Categoria4">Project Manager</div>
-    <div class="card" data-categoria="Categoria5">Tester</div>
-  </div> -->
