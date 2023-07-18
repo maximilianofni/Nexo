@@ -115,11 +115,15 @@
     height: 50px; /* Ajusta la altura según tus necesidades */
 }
 
+.card {
+  display: none;
+}
 
-  /* .chip-reset.selected {
-    background-color: red !important;
-    color: white !important;
-  } */
+.card.show-card {
+  display: block;
+}
+
+
 
 </style>
 </head>
@@ -149,7 +153,8 @@
     <div class="chip" data-categoria="Categoria10">animación</div>
     <div class="chip" data-categoria="Categoria14">estadisticas</div>
     <div class="chip" data-categoria="Categoria14">investigacion</div>
-    <!-- <div class="chip chip-reset" data-categoria="">Reset</div> -->
+    <div class="chip" data-categoria="Categoria8">arduino</div>
+
 
   </div>
 
@@ -231,7 +236,7 @@
    
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   const chipsContainer = document.getElementById('chipsContainer');
   const chips = document.querySelectorAll('.chip');
   const cards = document.querySelectorAll('.card');
@@ -242,11 +247,39 @@
       .map(chip => chip.getAttribute('data-categoria'));
 
     cards.forEach(card => {
-      card.style.display = 'none';
       const categoria = card.getAttribute('data-categoria');
-      if (selectedCategories.includes(categoria) || selectedCategories.length === 0) {
-        card.style.display = 'block';
+
+      if (selectedCategories.length === 0 || selectedCategories.includes(categoria)) {
+        card.classList.add('show-card');
+      } else {
+        card.classList.remove('show-card');
       }
+
+
+
+      // Agregar código adicional para mostrar las tarjetas según las categorías seleccionadas en los chips
+      if (selectedCategories.includes('Categoria3')) {
+        if (categoria === 'Categoria3' || categoria === 'Categoria10') {
+          card.classList.add('show-card');
+        }
+      }
+
+      // Agregar código adicional para mostrar las tarjetas según las categorías seleccionadas en los chips
+      if (selectedCategories.includes('Categoria6')) {
+        if (categoria === 'Categoria6' || categoria === 'Categoria13') {
+          card.classList.add('show-card');
+        }
+      }
+
+      // Agregar código adicional para mostrar las tarjetas según las categorías seleccionadas en los chips
+      if (selectedCategories.includes('Categoria2')) {
+        if (categoria === 'Categoria2' || categoria === 'Categoria11') {
+          card.classList.add('show-card');
+        }
+      }
+
+
+
     });
   }
 
@@ -254,38 +287,14 @@
     chip.addEventListener('click', function() {
       this.classList.toggle('selected');
       applyFilter();
-
-      // Agregar código adicional para redirigir al hacer clic en el chip "videojuegos"
-      if (this.getAttribute('data-categoria') === 'Categoria3') {
-        cards.forEach(card => {
-          const cardCategoria = card.getAttribute('data-categoria');
-          if (cardCategoria === 'Categoria3' || cardCategoria === 'Categoria10') {
-            card.style.display = 'block';
-          }
-        });
-      }
-  
-  // Agregar código adicional para redirigir al hacer clic en el chip "redes"
-  if (this.getAttribute('data-categoria') === 'Categoria6') {
-      cards.forEach(card => {
-        const cardCategoria = card.getAttribute('data-categoria');
-        if (cardCategoria === 'Categoria6' ||  cardCategoria === 'Categoria13') {
-          card.style.display = 'block';
-        }
-      });
-    }
-
-//
-
-
-//
     });
   });
 
   applyFilter();
 });
 
-    
-  </script>
+
+
+</script>
 </body>
 </html>
