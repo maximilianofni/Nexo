@@ -3,7 +3,7 @@
 
 # Objetivo de la web
 
-El objetivo es crear una herramienta tecnológica  que brinde a los estudiantes interesados en el ámbito de las Tecnologías de la Información (IT) las herramientas necesarias para tomar decisiones informadas y precisas sobre su futuro académico y profesional. Estas herramientas incluirán una aplicación web y móvil que ofrecerá información detallada sobre las diversas áreas laborales dentro del rubro de IT, sugerencias personalizadas basadas en los intereses de los estudiantes y opciones de instituciones educativas donde puedan cursar sus estudios.
+El objetivo es crear una herramienta tecnológica  que brinde a los estudiantes interesados en el ámbito de las Tecnologías de la Información (IT) las herramientas necesarias para tomar decisiones informadas y precisas sobre su futuro académico y profesional. Estas herramientas incluirán una aplicación web y móvil que ofrecerá información detallada sobre las diversas áreas laborales dentro del rubro de IT, sugerencias personalizadas basadas en los intereses de los estudiantes y opciones de instituciones educativas donde puedan cursar sus estudios en la localidad de la Plata, Buenos Aires.
 
 # link de la pagina
 
